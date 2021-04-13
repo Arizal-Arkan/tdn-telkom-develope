@@ -1,0 +1,93 @@
+.testimoni-content {
+    width: 100%;
+    margin: 13rem 5rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.testimoni-content > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimoni-content > div > div:first-child > p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.testimoni-content > div > div:first-child {
+    margin-top: 2rem;
+    position: relative;
+}
+
+.testimoni-content > div > div:first-child > div:nth-child(2) {
+    position: absolute;
+    top: 9rem;
+    right: -4rem;
+}
+
+.testimoni-content > div > div:first-child > div:nth-child(2) > img {
+    width: 40rem;
+}
+
+.testimoni-content > div > article {
+    height: 65vh;
+    overflow: auto;
+}
+
+.card-testimoni {
+    width: 45.875rem;
+    height: 15.188rem;
+    background-color: #fff;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.card-testimoni > div:first-child {
+    display: flex;
+    padding: 1.2rem;
+    padding-bottom: 0;
+}
+
+.card-testimoni > div:first-child > img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+.card-testimoni > div:first-child > div > p:first-child {
+    font-weight: 600;
+    color: #3F4251;
+    font-size: 1rem;
+}
+
+.card-testimoni > div:first-child > div > p:nth-child(2) {
+    font-weight: 500;
+    color: #979797;
+    font-size: 0.8rem;
+}
+
+.card-testimoni > div:nth-child(2) > p {
+    padding: 1rem;
+    padding-top: 1.2rem;
+    font-size: 0.9rem;
+}
+
+
+
+@media (max-width: 1600px) {
+    .card-testimoni {
+        width: 45rem;
+        height: 16rem;
+    } 
+
+    .card-testimoni > div:nth-child(2) > p {
+        padding: 1rem;
+        padding-top: 1.2rem;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,136 @@
+.contact-content {
+    width: 100%;
+    margin-bottom: 0 !important;
+    margin: 13rem 5rem;
+    position: relative;
+}
+
+.contact-content > div > div:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    left: 57rem;
+    z-index: -1;
+}
+
+.contact-content > div > div:nth-child(2) > img {
+    width: 48rem;
+}
+
+.contact-content > div > div:first-child {
+    width: 59.375rem;
+    height: 35.125rem;
+    padding: 2.5rem;
+    border-radius: 0.7rem;
+    background-color: #fff;
+    margin-top: 3rem;
+}
+
+.contact-content > div > div:first-child > p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact-content > div > div:first-child > div {
+    display: flex;
+    width: 100%;
+}
+
+/* form contact */
+
+.form-contact {
+    margin-top: 3rem;
+    width: 50%;
+}
+
+.form-contact > div {
+    position: relative;
+    height: 4rem;
+    margin-bottom: 2.2rem;
+}
+
+.form-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    border: 1.2px solid #B4BEC8;
+    border-radius: .3rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+}
+
+.form-label {
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+    padding: 0 .25rem;
+    background-color: #fff;
+    color: #878787;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.form-input:focus + .form-label {
+    top: -.8rem;
+    z-index: 10;
+}
+
+.form-input:not(:placeholder-shown).form-input:not(:focus)+ .form-label{
+    top: -.8rem;
+    z-index: 10;
+  }
+
+.form-button {
+    width: 100%;
+    margin-top: 1rem;
+    height: 3.5rem;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+    background-color: #E33B4D;
+}
+
+.form-button:hover {
+    box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, .15);
+}
+
+/*address*/
+
+.contact-address {
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-right: 0;
+    padding-left: 2rem;
+}
+
+.contact-address > div {
+    display: flex;
+}
+
+.contact-address > div:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.contact-address > div > p {
+    color: #0F001A;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.contact-address > div > p:hover {
+    color:#FFE81B;
+}
+
+.contact-address > div > img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}

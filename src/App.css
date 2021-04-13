@@ -1,0 +1,59 @@
+* {
+  animation: fade-in 0.5s ease-in-out;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 3.625rem;
+  line-height: 3.85rem;
+  color: #fff;
+}
+
+body {
+  background-color: #E33B4D;
+}
+
+h2 {
+  font-size: 3.75rem;
+  line-height: 3.3rem;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 0.875rem;
+}
+
+:root {
+  --error-color: #D0021B;
+  --light-text-color: #9E9E9E;
+  --primary-color: #6B449A;
+  --text-color: #424242;
+  --ultra-light-text-color: #E0E0E0;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 120em) {
+  :root {
+    font-size: calc(100vw * 16 / 1920);
+  }
+}

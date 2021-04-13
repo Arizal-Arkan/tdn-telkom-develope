@@ -1,0 +1,19 @@
+.root {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.625rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: bold;
+  padding: 0.9375rem 1.25rem;
+  min-width: 12.5rem;
+  transition: opacity 0.25s;
+}
+
+.root:disabled {
+  background-color: var(--ultra-light-text-color);
+  color: var(--light-text-color);
+  cursor: default;
+}

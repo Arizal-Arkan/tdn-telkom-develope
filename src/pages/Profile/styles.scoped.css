@@ -1,0 +1,52 @@
+.profile-content {
+  width: 100%;
+  margin-bottom: 0 !important;
+  margin: 12rem 4rem;
+}
+
+.profile-content > h2 {
+  font-size: 3.5rem;
+}
+
+.profile-content > p {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.profile-content > div {
+  position: relative;
+  margin-top: 1.25rem;
+}
+
+.profile-content > div > div:first-child{
+  display: flex;
+  align-items: center;
+  width: 30.313rem;
+  height: 19.063rem;
+  border-radius: 0.938rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(0.5rem);
+}
+
+.profile-content > div > div:nth-child(2) {
+  position: absolute;
+  top: 7rem;
+  left: 16.875rem;
+}
+
+.profile-content > div > div:first-child > img {
+  border-radius: 0.938rem;
+  height: 15.875rem;
+  margin-left: 1.563rem;
+}
+
+.profile-content > div > div:nth-child(2) > img {
+  width: 29rem;
+}
+
+@media (max-width: 1600px) {
+  .profile-content > div > div:nth-child(2) {
+    top: 6rem;
+  }
+}

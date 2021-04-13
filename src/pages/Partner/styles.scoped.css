@@ -1,0 +1,49 @@
+.partner-content {
+    display: flex;
+    position: relative;
+}
+
+.partner-content > div:nth-child(2) {
+    position: absolute;
+    right: 7rem;
+    top: 11rem;
+}
+
+.partner-content > div:nth-child(2) > img {
+    width: 40rem;
+}
+
+.partner-content > div:first-child {
+    width: 100%;
+    margin: 13rem 5rem 0 5rem;
+    overflow: auto;
+}
+
+.partner-content > div:first-child > div {
+    display: flex;
+    width: 38rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.partner-content > div:first-child > div > div {
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 0.7rem;
+    margin-right: 1rem;
+    margin-bottom: 1.2rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.partner-content > div:first-child > div > div:hover {
+    transform: translate3d(0, -.3rem, 0);
+}
+
+.partner-content > div:first-child > div > div > img {
+    width: 7.5rem;
+}
