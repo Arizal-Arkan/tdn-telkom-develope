@@ -7,15 +7,19 @@ export default function Profile() {
   DocumentBackground(`url(${IMAGES.BG_PROFILE})`);
   return (
     <div className={styles['profile-content']}>
-      <h2>About Chapter <br/> Developer</h2>
-      <p>Why should you join Telkom Indonesia's Chapter Developer? <br/>
-        Because here is the right place to develop the potential that <br/>
-        you already have, as long as you have high determination and <br/>
-        the willingness to continue learning. A lot of work? Lazy? Dizzy? <br/>
-        Just calm down here you get a comfortable work environment <br/>
-        and place that can support your productivity. Soft skill and hard <br/>
-        skill development are also accompanied by experienced <br/>
-        friends, so don't worry about that.
+      <h2>
+        About Chapter <br /> Developer
+      </h2>
+      <p>
+        "Bagi Ayubi", Telkom DEV adalah tempat paling hangat dengan <br />
+        penuh ilmu pengetahuan, keceriaan, pengalaman, dan perasaan <br />
+        seperti ada ditengah keluarga. Disini kami saling berbagi dan <br />
+        membantu satu sama lain untuk tumbuh bersama. Keluarga <br />
+        Telkom Dev memberikan dukungan penuh untuk tiap anggotanya
+        <br />
+        menemukan tujuan dan target di kehidupan. Tidak ada lagi kata <br />
+        aku jika ada kamu dan aku di Telkom Dev, maka kita adalah <br />{' '}
+        keluarga.
       </p>
       <div>
         <div>

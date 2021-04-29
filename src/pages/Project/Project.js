@@ -8,83 +8,87 @@ export default function Project() {
   const pic = [
     {
       img: IMAGES.UMEETME,
-      name: 'umeetme'
+      name: 'umeetme',
+      link: 'https://www.umeetme.id/',
     },
     {
       img: IMAGES.PEDULI,
-      name: 'peduli lindungi'
+      name: 'peduli lindungi',
+      link: 'https://pedulilindungi.id/',
     },
     {
       img: IMAGES.INDIHOME,
-      name: 'indihome'
+      name: 'indihome',
+      link: 'https://indihome.co.id/',
     },
     {
       img: IMAGES.BONUM,
-      name: 'bonum'
+      name: 'bonum',
+      link: 'https://indihome.co.id/',
     },
     {
       img: IMAGES.MYCARRIER,
-      name: 'my carrier'
+      name: 'my carrier',
     },
     {
       img: IMAGES.CHAT,
-      name: 'chatAja'
+      name: 'chatAja',
     },
     {
       img: IMAGES.AGGREMARKET,
-      name: 'agree'
+      name: 'agree',
     },
     {
       img: IMAGES.AGGREPARTNER,
-      name: 'agree'
+      name: 'agree',
     },
     {
       img: IMAGES.AGGREMODAL,
-      name: 'agree'
+      name: 'agree',
     },
     {
       img: IMAGES.MYINDIHOME,
-      name: 'my indihome'
+      name: 'my indihome',
     },
     {
       img: IMAGES.MYPERTAMINA,
-      name: 'my pertamina'
+      name: 'my pertamina',
     },
     {
       img: IMAGES.DIGIBIZ,
-      name: 'mydigibiz'
+      name: 'mydigibiz',
     },
     {
       img: IMAGES.MYTDS,
-      name: 'mytds'
+      name: 'mytds',
     },
     {
       img: IMAGES.INDIBOX,
-      name: 'indibox'
+      name: 'indibox',
     },
     {
       img: IMAGES.USEETV,
-      name: 'USEETV'
+      name: 'USEETV',
     },
     {
       img: IMAGES.QREN,
-      name: 'QREN'
+      name: 'QREN',
     },
     {
       img: IMAGES.LOGETRANS,
-      name: 'LOGEE'
+      name: 'LOGEE',
     },
     {
       img: IMAGES.LOGEORDER,
-      name: 'LOGEE'
+      name: 'LOGEE',
     },
     {
       img: IMAGES.PIJARMAHIR,
-      name: 'PIJAR'
+      name: 'PIJAR',
     },
     {
       img: IMAGES.PIJARSEKOLAH,
-      name: 'PIJAR'
+      name: 'PIJAR',
     },
   ];
 
@@ -93,20 +97,24 @@ export default function Project() {
       <div>
         <h2>Project</h2>
         <p>
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/>
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/>
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+          Para developer yang tergabung dalam Chapter Developer Telkom
+          Indonesia,
+          <br />
+          sesuai dengan keahlian dan kompetensi mereka, mengambil andil dalam{' '}
+          <br />
+          pengembangan produk-produk yang merupakan Digital Initiatives dari
+          Telkom.
         </p>
         <div>
           {pic.map((data, index) => (
             <div key={index}>
-              <img alt={data.name} src={data.img}/>
+              <img alt={data.name} src={data.img} />
             </div>
           ))}
         </div>
       </div>
       <div>
-        <img alt="" src={IMAGES.ILUSTRATION_PROJECT}/>
+        <img alt="" src={IMAGES.ILUSTRATION_PROJECT} />
       </div>
     </div>
   );

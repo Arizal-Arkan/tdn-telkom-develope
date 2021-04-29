@@ -1,58 +1,58 @@
 .project-content {
-    display: flex;
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .project-content > div:nth-child(2) {
-    position: absolute;
-    left: 51rem;
-    bottom: 1rem;
+  position: absolute;
+  left: 51rem;
+  bottom: 1rem;
 }
 
 .project-content > div:nth-child(2) > img {
-    width: 55rem;
+  width: 55rem;
 }
 
 .project-content > div:first-child {
-    width: 50%;
-    margin-bottom: 0 !important;
-    margin: 13rem 5rem;
-    height: 80%;
-    overflow: auto;
+  width: 50%;
+  margin-bottom: 0 !important;
+  margin: 13rem 5rem;
+  height: 80%;
+  overflow: auto;
 }
 
 .project-content > div:first-child > p {
-    color: #fff;
-    font-size: 1.5rem;
-    padding-top: 2rem;
+  color: #fff;
+  font-size: 1.22rem;
+  padding-top: 2rem;
 }
 
 .project-content > div:first-child > div {
-    display: flex;
-    flex-wrap: wrap;
-    width: 47rem;
-    margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 47rem;
+  margin-top: 3rem;
 }
 
 .project-content > div:first-child > div > div {
-    width: 8.125rem;
-    height: 8.125rem;
-    border-radius: 0.7rem;
-    background-color: #fff;
-    margin-right: 1.2rem;
-    margin-bottom: 2.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.3s;
+  width: 8.125rem;
+  height: 8.125rem;
+  border-radius: 0.7rem;
+  background-color: #fff;
+  margin-right: 1.2rem;
+  margin-bottom: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .project-content > div:first-child > div > div:hover {
-    transform: translate3d(0, -.3rem, 0);
+  transform: translate3d(0, -0.3rem, 0);
 }
 
 .project-content > div:first-child > div > div > img {
-    width: 5.5rem;
+  width: 5.5rem;
 }
