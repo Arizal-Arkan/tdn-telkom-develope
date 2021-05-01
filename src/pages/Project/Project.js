@@ -92,6 +92,10 @@ export default function Project() {
     },
   ];
 
+  const linkHref = (link) => {
+    window.open(link);
+  };
+
   return (
     <div className={styles['project-content']}>
       <div>
@@ -107,7 +111,7 @@ export default function Project() {
         </p>
         <div>
           {pic.map((data, index) => (
-            <div key={index}>
+            <div key={index} onClick={() => linkHref(data.link)}>
               <img alt={data.name} src={data.img} />
             </div>
           ))}

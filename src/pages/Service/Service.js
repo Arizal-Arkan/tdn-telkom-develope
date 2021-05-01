@@ -10,44 +10,44 @@ export default function Service() {
 
   const listCard = [
     {
-      role: 'Software architec',
+      role: 'Software Architect',
       img: IMAGES.SOFTW,
-      to: 'software-architec'
+      to: 'software-architec',
     },
     {
       role: 'Mobile Developer',
       img: IMAGES.MOBILE,
-      to: 'mobile-developer'
+      to: 'mobile-developer',
     },
     {
-      role: 'Frontend developer',
+      role: 'Frontend Developer',
       img: IMAGES.FE,
-      to: 'frontend-developer'
+      to: 'frontend-developer',
     },
     {
-      role: 'Backend developer',
+      role: 'Backend Developer',
       img: IMAGES.BEN,
-      to: 'backend-developer'
+      to: 'backend-developer',
     },
     {
-      role: 'Document enginer',
+      role: 'Documentation Engineer',
       img: IMAGES.DOC,
-      to: 'document-enginer'
+      to: 'document-enginer',
     },
     {
-      role: 'Scrum master',
+      role: 'Scrum Master',
       img: IMAGES.SM,
-      to: 'scrum-master'
+      to: 'scrum-master',
     },
     {
-      role: 'Quality assurance',
+      role: 'Quality Assurance',
       img: IMAGES.QA,
-      to: 'quality-assurance'
+      to: 'quality-assurance',
     },
     {
       role: 'DevSecOps Engineer',
       img: IMAGES.OPS,
-      to: 'DevSecOps-engineer'
+      to: 'DevSecOps-engineer',
     },
   ];
 
@@ -56,9 +56,16 @@ export default function Service() {
       <h2>What we do</h2>
       <div>
         {listCard.map((data, index) => (
-          <div key={index} onClick={() => history.push({ pathname: `/service/${data.to}`,
-            state: { detail: data.to } })}>
-            <img alt="" src={data.img}/> <p>{data.role}</p>
+          <div
+            key={index}
+            onClick={() =>
+              history.push({
+                pathname: `/service/${data.to}`,
+                state: { detail: data.to },
+              })
+            }
+          >
+            <img alt="" src={data.img} /> <p>{data.role}</p>
           </div>
         ))}
       </div>

@@ -8,35 +8,28 @@ export default function Testimoni() {
   DocumentBackground(`url(${IMAGES.BG_BASE})`);
   const listTestimoni = [
     {
-      img: IMAGES.HUMAN,
+      img: IMAGES.irman,
       name: 'Irman Juliansyah',
       role: 'Backend Developer',
       testi:
         'DEV itu berasa rumah, orang-orangnya asik, tapi tetap up to date dengan perkembangan teknologi karena stack teknologi yang digunakan juga high.',
     },
     {
-      img: IMAGES.HUMAN,
+      img: IMAGES.hamdan,
       name: 'Hamdan Prakoso',
       role: 'Frontend Developer',
       testi:
         'For me, its been more than a couple of years working with DEV. DEV provides me with such a conducive and employee-friendly work environment. DEV encourages us to have a balance between work, play, and pray. It also provides a platform to enhance our knowledge and skills via sharing sessions with peers and the leader. I feel very gratified and glad to be associated with DEV.',
     },
     {
-      img: IMAGES.HUMAN,
+      img: IMAGES.rizkhi,
       name: 'M. Rizky Pratama',
       role: 'Quality Assurance',
       testi:
         'Telkom DEV memberikan pengalaman dan pembelajaran yang luar biasa. Selain mengerjakan pekerjaan, di sini kita dapat berkembang. Senior di DEV bisa membimbing dan mengarahkan  kita untuk lebih berkembang. Anak-anak DEV juga asik. Serius saat kerja, santai di luar kerja.',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Irman Juliansyah',
-      role: 'Backend Developer',
-      testi:
-        'Telkom DEV memberikan pengalaman dan pembelajaran yang luar biasa. Selain mengerjakan pekerjaan, di sini kita dapat berkembang. Senior di DEV bisa membimbing dan mengarahkan  kita untuk lebih berkembang. Anak-anak DEV juga asik. Serius saat kerja, santai di luar kerja.',
-    },
-    {
-      img: IMAGES.HUMAN,
+      img: IMAGES.osi,
       name: 'Osi Rahmadita',
       role: 'Quality Assurance',
       testi:
@@ -50,9 +43,8 @@ export default function Testimoni() {
       <div>
         <div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur <br />
-            adipiscing elit, sed do eiusmod tempor incididunt <br />
-            ut labore et dolore magna aliqua.{' '}
+            Yang mereka para developer rasakan <br />
+            berbagi dan berkarya di Telkom Chapter Developer.{' '}
           </p>
           <div>
             <img alt="" src={IMAGES.ILUSTRATION_TESTIMONI} />

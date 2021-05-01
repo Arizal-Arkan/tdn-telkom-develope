@@ -14,29 +14,29 @@ export default function Home() {
   const dataMenu = [
     {
       name: 'Profile',
-      path: '/profile'
+      path: '/profile',
     },
     {
       name: 'Service',
-      path: '/service'
+      path: '/service',
     },
     {
       name: 'Project',
-      path: '/project'
+      path: '/project',
     },
     {
       name: 'Gallery',
-      path: '/gallery'
+      path: '/gallery',
     },
     {
       name: 'Testimoni',
-      path: '/testimoni'
+      path: '/testimoni',
     },
   ];
   const d = 8.25;
 
   return (
-    <Canvas onMouseMove={(e) => mouse.current = mousePosition(e)} shadowMap>
+    <Canvas onMouseMove={(e) => (mouse.current = mousePosition(e))} shadowMap>
       <pointLight intensity={0.5} position={[0, 10, 10]} />
       <directionalLight
         castShadow
@@ -49,14 +49,18 @@ export default function Home() {
         shadow-camera-top={d}
       />
       <Suspense fallback={null}>
-        <Model mouse={mouse} position={[0, -1.4, 0]} scale={[0.45, 0.45, 0.08]} />
+        <Model
+          mouse={mouse}
+          position={[0, -1.4, 0]}
+          scale={[0.45, 0.45, 0.08]}
+        />
         <Backdrop
           position={[-0.25, -3.13, -2.75]}
           rotation={[0, -0.07, 0]}
           scale={[1.5, 1.5, 0.7]}
         />
       </Suspense>
-      <Html className={styles.content} fullscreen scaleFactor={10} >
+      <Html className={styles.content} fullscreen scaleFactor={10}>
         <section>
           {dataMenu.map((data, index) => (
             <button key={index} onClick={() => history.push(data.path)}>
@@ -66,16 +70,18 @@ export default function Home() {
           ))}
         </section>
         <section>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat."
+          "Selamat datang di telkom developer network, disini adalah tempat kami
+          para developer berkembang bersama. Berkolaborasi menciptakan sesuatu
+          yang berguna untuk bangsa ."
         </section>
         <footer>
           <a href="https://www.instagram.com/devceria" target="_blank">
             <img alt="dev-instagram" src="/assets/ic-black-ig.svg" />
           </a>
-          <a href="https://www.youtube.com/channel/UCA5KKaClnatT5saGcKV8Cjw" target="_blank">
+          <a
+            href="https://www.youtube.com/channel/UCA5KKaClnatT5saGcKV8Cjw"
+            target="_blank"
+          >
             <img alt="dev-youtube" src="/assets/ic-black-yt.svg" />
           </a>
         </footer>
@@ -87,9 +93,7 @@ export default function Home() {
 function Backdrop({ ...props }) {
   const { scene } = useLoader(GLTFLoader, '/assets/bg-home.gltf');
 
-  return (
-    <primitive object={scene} {...props} />
-  );
+  return <primitive object={scene} {...props} />;
 }
 
 function Model({ mouse, ...props }) {
@@ -112,17 +116,25 @@ function Model({ mouse, ...props }) {
 }
 
 Model.defaultProps = {
-  mouse: {}
+  mouse: {},
 };
 
 Model.propTypes = {
-  mouse: PropTypes.object
+  mouse: PropTypes.object,
 };
 
 function moveJoint(mouse, joint, degreeLimit = 40) {
   let degrees = mouseDegrees(mouse.current.x, mouse.current.y, degreeLimit);
-  joint.rotation.xD = THREE.MathUtils.lerp(joint.rotation.xD || 0, degrees.y, 0.1);
-  joint.rotation.yD = THREE.MathUtils.lerp(joint.rotation.yD || 0, degrees.x, 0.1);
+  joint.rotation.xD = THREE.MathUtils.lerp(
+    joint.rotation.xD || 0,
+    degrees.y,
+    0.1
+  );
+  joint.rotation.yD = THREE.MathUtils.lerp(
+    joint.rotation.yD || 0,
+    degrees.x,
+    0.1
+  );
   joint.rotation.x = THREE.Math.degToRad(joint.rotation.xD);
   joint.rotation.y = THREE.Math.degToRad(joint.rotation.yD);
 }

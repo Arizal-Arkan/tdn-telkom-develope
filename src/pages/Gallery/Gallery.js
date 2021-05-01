@@ -3,88 +3,88 @@ import { IMAGES } from '../../configs';
 import styles from './styles.scoped.css';
 import DocumentBackground from './../../utils/DocumentBackground';
 
-export default function Gallery () {
+export default function Gallery() {
   DocumentBackground(`url(${IMAGES.BG_BASE})`);
   const listHuman = [
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.irman,
+      name: 'IRMAN JULIANSYAH',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.josh,
+      name: 'JOSH',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.rizkhi,
+      name: 'MOHAMMAD RIZKY PRATAMA',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.osi,
+      name: 'OSI RAHMA',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.rama,
+      name: 'RIZKY RAMADHAN SUBAGIO',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.encep,
+      name: 'ENCEP HAMZAH FAIZAL RAMADHAN',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.nyassa,
+      name: 'NYSSA RAMADHATI',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.emy,
+      name: 'EMMY TRISNAWATI HUSAIN',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.hans,
+      name: 'HANS CHRISTIAN SARAGIH',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.ridwan,
+      name: 'AHMAD RIDWAN',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.ramadhan,
+      name: 'DIMAS RAMADHAN AMRULLOH',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.khadam,
+      name: 'KHADAM IKHWANUS SHOFA',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.roni,
+      name: 'RONY SETYAWAN',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.rifaldi,
+      name: 'RIFALDI RIZQI PRATAMA',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.aljiro,
+      name: 'AHMAD SARJONO ALJIRO',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.alif,
+      name: 'ALIF SEPTIAN NURDIANTO',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.ger,
+      name: 'GERALD GHIBRAN GUNASHA',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.faishal,
+      name: 'PERDANA FAISHAL MULHAQ',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Josh'
+      img: IMAGES.bagus,
+      name: 'BENTAR SEPTIAN',
     },
     {
-      img: IMAGES.HUMAN,
-      name: 'Lorem ipsum'
+      img: IMAGES.ayubi,
+      name: 'AYU BINTANG NURRACHMA GUNAWAN',
     },
   ];
 
@@ -94,8 +94,10 @@ export default function Gallery () {
       <div>
         {listHuman.map((data, index) => (
           <div key={index}>
-            <img alt="" src={data.img}/>
-            <div><p>{data.name}</p></div>
+            <img alt="" src={data.img} />
+            <div>
+              <p>{data.name}</p>
+            </div>
           </div>
         ))}
       </div>
