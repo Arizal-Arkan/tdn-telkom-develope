@@ -51,7 +51,7 @@
   padding-bottom: 0;
 }
 
-.card-testimoni > div:first-child > img {
+.img-user {
   width: 3rem;
   height: 3rem;
   object-fit: cover;
@@ -118,7 +118,7 @@
     align-self: flex-end;
     margin-bottom: 6rem;
   }
-  .card-testimoni > div:first-child > img {
+  .img-user {
     width: 8rem;
     height: 8rem;
     object-fit: cover;
