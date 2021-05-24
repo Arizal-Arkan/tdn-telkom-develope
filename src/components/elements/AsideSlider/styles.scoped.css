@@ -1,63 +1,55 @@
 .aside-scroll {
-    display: flex;
-    align-self: flex-end;
-    flex-direction: column;
-    width: 9.5vw;
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  width: 9.5vw;
+  z-index: 10;
 }
 
 .aside-scroll > div:first-child {
-    margin-bottom: 13.625rem;
+  margin-bottom: 13.625rem;
+}
+
+.aside-scroll > div:first-child > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.313rem;
+  height: 2rem;
+  flex-direction: row-reverse;
+}
+
+.aside-scroll > div:first-child > div > div {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+
+.aside-scroll > div:first-child > div.active > div {
+  background-color: #ffe81b;
+}
+
+.aside-scroll > div:first-child > div > p {
+  color: #fff;
+  display: none;
+  margin-right: 0.938rem;
+  font-size: 1.5rem;
+}
+
+.aside-scroll > div:first-child > div > div:hover + p,
+.aside-scroll > div:first-child > div.active > p {
+  display: block;
 }
 
 .aside-scroll > div:nth-child(2) {
-    margin-bottom: 8.438rem;
-    margin-left: 4rem;
-    width: 7rem;
+  margin-bottom: 8.438rem;
+  margin-left: 4rem;
+  width: 7rem;
 }
 
-.year p{
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transform: rotate(270deg);
-    transform-origin: 85%;
-}
-
-.year-intro p{
-    color: #333;
-    font-weight: 500;
-    font-size: 1.2rem;
-    transform: rotate(270deg);
-    transform-origin: 85%;
-}
-
-.aside-scroll > div:first-child > div:nth-child(2n+1) > p {
-    color: #fff;
-    margin-right: 0.938rem;
-    font-size: 1.5rem;
-}
-
-.aside-scroll > div:first-child > div:nth-child(2n) > p {
-    color: #fff;
-    margin-right: 0.938rem;
-    font-size: 1.5rem;
-}
-
-.aside-scroll > div:first-child > div:nth-child(2n) {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.313rem;
-    justify-content: flex-end;
-}
-
-.aside-scroll > div:first-child > div:nth-child(2n+1) {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.313rem;
-    justify-content: flex-end;
-}
-
-.circle-active {
+/* .circle-active {
     width: 0.8rem;
     height: 0.8rem;
     background-color: #FFE81B;
@@ -73,4 +65,20 @@
     border-radius: 50%;
     margin-right: 0.8rem;
     cursor: pointer;
+} */
+
+.year p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transform: rotate(270deg);
+  transform-origin: 85%;
+}
+
+.year-intro p {
+  color: #333;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transform: rotate(270deg);
+  transform-origin: 85%;
 }

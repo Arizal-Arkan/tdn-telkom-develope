@@ -10,7 +10,7 @@
   bottom: 1rem;
 }
 
-.project-content > div:nth-child(2) > img {
+.project-content > div:nth-child(2) img {
   width: 55rem;
 }
 
@@ -35,6 +35,10 @@
   margin-top: 3rem;
 }
 
+.img-mobile {
+  width: 72rem;
+}
+
 .project-content > div:first-child > div > div {
   width: 8.125rem;
   height: 8.125rem;
@@ -55,4 +59,49 @@
 
 .project-content > div:first-child > div > div > img {
   width: 5.5rem;
+}
+
+@media (max-width: 600px) {
+  .project-content > div:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0 !important;
+    margin: 12rem 5rem;
+    height: 85%;
+    overflow: auto;
+  }
+
+  .project-content > div:first-child > h2 {
+    font-size: 8rem;
+    margin-bottom: 7rem;
+  }
+
+  .project-content > div:first-child > p {
+    font-size: 3.5rem;
+    margin-bottom: 7rem;
+  }
+
+  .project-content > div:first-child > div {
+    width: 100%;
+    place-content: center;
+  }
+
+  .project-content > div:first-child > div > div {
+    width: 32.125rem;
+    height: 32.125rem;
+    border-radius: 4rem;
+    background-color: #fff;
+    margin-right: 2.3rem;
+    margin-bottom: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .project-content > div:first-child > div > div > img {
+    width: 18.5rem;
+  }
 }

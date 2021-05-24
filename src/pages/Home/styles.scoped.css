@@ -25,6 +25,16 @@
   width: 100%;
 }
 
+.content > p {
+  color: #333;
+  bottom: 4.75rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: absolute;
+  right: 2rem;
+  transform: rotate(270deg);
+}
+
 .content > section:first-child > button {
   align-items: center;
   backdrop-filter: blur(0.875rem);

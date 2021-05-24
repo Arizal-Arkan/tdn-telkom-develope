@@ -1,11 +1,18 @@
+/* eslint-disable implicit-arrow-linebreak */
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import DocumentBackground from './../../utils/DocumentBackground';
 import styles from './styles.scoped.css';
 import { IMAGES } from '../../configs';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Service() {
-  DocumentBackground(`url(${IMAGES.BG_SERVICE})`);
+  DocumentBackground(`img-bg-service`);
+  const isMobile = useMediaQuery({ maxWidth: 600 });
+
+  if (isMobile) {
+    DocumentBackground(`img-bg-service-mobile`);
+  }
   const history = useHistory();
 
   const listCard = [

@@ -1,89 +1,89 @@
 import React from 'react';
-import { IMAGES } from '../../configs';
+import Webp from '../../components/elements/Webp';
 import styles from './styles.scoped.css';
 import DocumentBackground from './../../utils/DocumentBackground';
 
 export default function Gallery() {
-  DocumentBackground(`url(${IMAGES.BG_BASE})`);
+  DocumentBackground('img-bg-base');
   const listHuman = [
     {
-      img: IMAGES.irman,
+      img: 'irman',
       name: 'IRMAN JULIANSYAH',
     },
     {
-      img: IMAGES.josh,
+      img: 'josh',
       name: 'JOSH',
     },
     {
-      img: IMAGES.rizkhi,
+      img: 'rizkhi',
       name: 'MOHAMMAD RIZKY PRATAMA',
     },
     {
-      img: IMAGES.osi,
+      img: 'osi',
       name: 'OSI RAHMA',
     },
     {
-      img: IMAGES.rama,
+      img: 'rama',
       name: 'RIZKY RAMADHAN SUBAGIO',
     },
     {
-      img: IMAGES.encep,
+      img: 'encep',
       name: 'ENCEP HAMZAH FAIZAL RAMADHAN',
     },
     {
-      img: IMAGES.nyassa,
+      img: 'nyassa',
       name: 'NYSSA RAMADHATI',
     },
     {
-      img: IMAGES.emy,
+      img: 'emy',
       name: 'EMMY TRISNAWATI HUSAIN',
     },
     {
-      img: IMAGES.hans,
+      img: 'hans',
       name: 'HANS CHRISTIAN SARAGIH',
     },
     {
-      img: IMAGES.ridwan,
+      img: 'ridwan',
       name: 'AHMAD RIDWAN',
     },
     {
-      img: IMAGES.ramadhan,
+      img: 'ramadhan',
       name: 'DIMAS RAMADHAN AMRULLOH',
     },
     {
-      img: IMAGES.khadam,
+      img: 'khadam',
       name: 'KHADAM IKHWANUS SHOFA',
     },
     {
-      img: IMAGES.roni,
+      img: 'roni',
       name: 'RONY SETYAWAN',
     },
     {
-      img: IMAGES.rifaldi,
+      img: 'rifaldi',
       name: 'RIFALDI RIZQI PRATAMA',
     },
     {
-      img: IMAGES.aljiro,
+      img: 'aljiro',
       name: 'AHMAD SARJONO ALJIRO',
     },
     {
-      img: IMAGES.alif,
+      img: 'alif',
       name: 'ALIF SEPTIAN NURDIANTO',
     },
     {
-      img: IMAGES.ger,
-      name: 'GERALD GHIBRAN GUNASHA',
+      img: 'ger',
+      name: 'GERALDY MARTIN PANGABEAN',
     },
     {
-      img: IMAGES.faishal,
+      img: 'faishal',
       name: 'PERDANA FAISHAL MULHAQ',
     },
     {
-      img: IMAGES.bagus,
+      img: 'bentar',
       name: 'BENTAR SEPTIAN',
     },
     {
-      img: IMAGES.ayubi,
+      img: 'ayubi',
       name: 'AYU BINTANG NURRACHMA GUNAWAN',
     },
   ];
@@ -94,7 +94,7 @@ export default function Gallery() {
       <div>
         {listHuman.map((data, index) => (
           <div key={index}>
-            <img alt="" src={data.img} />
+            <Webp alt="" classImg={styles['img-gallery']} name={data.img} />
             <div>
               <p>{data.name}</p>
             </div>

@@ -8,7 +8,7 @@ import styles from './styles.scoped.css';
 import { IMAGES } from '../../configs';
 
 export default function DetailService() {
-  DocumentBackground(`url(${IMAGES.BG_SERVICE_DETAIL})`);
+  DocumentBackground('img-bg-detail-service');
 
   const location = useLocation();
   const history = useHistory();

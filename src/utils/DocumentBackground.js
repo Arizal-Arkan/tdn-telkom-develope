@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
 
-const DocumentBackground = (background) => {
+export default (background) => {
   useEffect(() => {
-    document.body.style.backgroundImage = background;
-    document.body.style.backgroundPosition = 'center';
-    document.body.style.backgroundRepeat = 'no-repeat';
-    document.body.style.backgroundSize = 'cover';
-  });
-};
+    const app = document.getElementById('app');
 
-export default DocumentBackground;
+    if (CSS.supports('background-image', `url(/assets/${background}.webp)`)) {
+      app.style.backgroundImage = `url(/assets/${background}.webp)`;
+    } else {
+      app.style.backgroundImage = `url(/assets/${background}.png)`;
+    }
+  }, [background]);
+};

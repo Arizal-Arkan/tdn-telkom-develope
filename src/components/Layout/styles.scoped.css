@@ -4,12 +4,6 @@
   margin: 0 3.125rem;
 }
 
-.root-intro {
-  display: flex;
-  height: 90vh;
-  margin: 0 3.125rem;
-}
-
 .root-intro > div {
   flex: 1;
 }
@@ -22,10 +16,6 @@
   height: 100vh;
 }
 
-.main-content-intro {
-  height: auto;
-}
-
 .main-content > nav {
   position: fixed;
   width: 100%;
@@ -34,4 +24,10 @@
 .main-content-intro > nav {
   position: fixed;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .root {
+    flex-direction: column;
+  }
 }

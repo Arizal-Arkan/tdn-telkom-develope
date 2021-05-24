@@ -1,0 +1,66 @@
+.aside-scroll {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+}
+
+.aside-scroll > div:first-child {
+  margin-bottom: 9rem;
+  display: flex;
+}
+
+.aside-scroll > div:nth-child(2) {
+  margin-bottom: 8.438rem;
+  margin-left: 4rem;
+  width: 7rem;
+}
+
+.aside-scroll > div:first-child > div:nth-child(2n + 1) > p {
+  color: #fff;
+  margin-right: 6rem;
+  font-size: 4rem;
+  margin-bottom: 14.5rem;
+  position: absolute;
+}
+
+.aside-scroll > div:first-child > div:nth-child(2n) > p {
+  color: #fff;
+  margin-right: 6rem;
+  font-size: 4rem;
+  margin-bottom: 14.5rem;
+  position: absolute;
+}
+
+.aside-scroll > div:first-child > div:nth-child(2n) {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.313rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aside-scroll > div:first-child > div:nth-child(2n + 1) {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.313rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.circle-active {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ffe81b;
+  border-radius: 50%;
+  margin-right: 5rem;
+  cursor: pointer;
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 5rem;
+  cursor: pointer;
+}

@@ -1,11 +1,18 @@
 /* eslint-disable react/jsx-max-depth */
 import React from 'react';
+import Webp from '../../components/elements/Webp';
 import styles from './styles.scoped.css';
 import { IMAGES } from '../../configs';
 import DocumentBackground from './../../utils/DocumentBackground';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Testimoni() {
-  DocumentBackground(`url(${IMAGES.BG_BASE})`);
+  const isMobile = useMediaQuery({ maxWidth: 600 });
+  DocumentBackground(`img-bg-base`);
+
+  if (isMobile) {
+    DocumentBackground('img-bg-base-mobile');
+  }
   const listTestimoni = [
     {
       img: IMAGES.irman,
@@ -39,16 +46,30 @@ export default function Testimoni() {
 
   return (
     <div className={styles['testimoni-content']}>
-      <h2>Testimoni</h2>
+      {isMobile ? (
+        <div className={styles['top-mobile']}>
+          {' '}
+          <h2>Testimonial</h2>{' '}
+          <Webp alt="" classImg={styles['img-mobile']} name="img-testimoni" />
+        </div>
+      ) : (
+        <h2>Testimonial</h2>
+      )}
       <div>
         <div>
           <p>
             Yang mereka para developer rasakan <br />
             berbagi dan berkarya di Telkom Chapter Developer.{' '}
           </p>
-          <div>
-            <img alt="" src={IMAGES.ILUSTRATION_TESTIMONI} />
-          </div>
+          {!isMobile ? (
+            <div>
+              <Webp
+                alt=""
+                classImg={styles['img-testimoni']}
+                name="img-testimoni"
+              />
+            </div>
+          ) : null}
         </div>
         <article>
           {listTestimoni.map((data, index) => (

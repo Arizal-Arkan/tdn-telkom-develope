@@ -19,7 +19,7 @@
   margin-top: 1.25rem;
 }
 
-.profile-content > div > div:first-child{
+.profile-content > div > div:first-child {
   display: flex;
   align-items: center;
   width: 30.313rem;
@@ -35,7 +35,7 @@
   left: 16.875rem;
 }
 
-.profile-content > div > div:first-child > img {
+.img-friend {
   border-radius: 0.938rem;
   height: 15.875rem;
   margin-left: 1.563rem;
@@ -45,8 +45,46 @@
   width: 29rem;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 600px) {
   .profile-content > div > div:nth-child(2) {
     top: 6rem;
+  }
+
+  .profile-content {
+    margin: 83rem 0;
+    padding-left: 10rem;
+  }
+
+  .profile-content > h2 {
+    font-size: 9rem;
+    line-height: 1;
+  }
+
+  .profile-content > p {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 3.3rem;
+  }
+
+  .profile-content > div > div:first-child {
+    display: flex;
+    align-items: center;
+    width: 96rem;
+    height: 35rem;
+    border-radius: 4rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(0.5rem);
+  }
+
+  .img-friend-mobile {
+    border-radius: 5rem;
+    height: 31rem;
+    margin-left: 10rem;
+  }
+}
+
+@media (max-height: 750px) {
+  .profile-content {
+    margin: 70rem 0;
   }
 }

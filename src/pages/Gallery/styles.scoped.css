@@ -1,49 +1,93 @@
 .gallery-content {
-    width: 100%;
-    margin-bottom: 0 !important;
-    margin: 13rem 5rem;
-    margin-right: 0;
+  width: 100%;
+  margin-bottom: 0 !important;
+  margin: 13rem 5rem;
+  margin-right: 0;
 }
 
 .gallery-content > div {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-    height: 65vh;
-    overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  height: 65vh;
+  overflow: auto;
 }
 
 .gallery-content > div > div {
-    position: relative;
-    text-align: center;
-    width: 17.1rem;
-    height: 10.7rem;
-    margin-right: 1.25rem;
-    margin-bottom: 1.1rem;
-    transition: all .3s;
+  position: relative;
+  text-align: center;
+  width: 17.1rem;
+  height: 10.7rem;
+  margin-right: 1.25rem;
+  margin-bottom: 1.1rem;
+  transition: all 0.3s;
 }
 
 .gallery-content > div > div:hover {
-    transform: translate3d(0, -.3rem, 0);
+  transform: translate3d(0, -0.3rem, 0);
 }
 
-.gallery-content > div > div > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.img-gallery {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .gallery-content > div > div > div > p {
-    font-size: 0.7rem;
-    color: #fff;
-    margin-left: 1rem;
-    margin-bottom: 0.5rem;
+  font-size: 0.7rem;
+  color: #fff;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .gallery-content > div > div > div {
+  position: absolute;
+  padding-right: 1.2rem;
+  padding-top: 0.5rem;
+  bottom: 0;
+  background: rgba(2, 2, 2, 0.65);
+}
+
+@media (max-width: 600px) {
+  .gallery-content {
+    margin: 40rem 0rem;
+    padding-left: 7rem;
+  }
+  .gallery-content > h2 {
+    font-size: 7rem;
+    margin-bottom: 10rem;
+  }
+  .gallery-content > div > div {
+    position: relative;
+    text-align: center;
+    width: 32.1rem;
+    height: 32.7rem;
+    margin-right: 1.7rem;
+    margin-bottom: 2.1rem;
+    transition: all 0.3s;
+    border-radius: 10rem;
+  }
+  .img-gallery {
+    border-radius: 6rem;
+  }
+  .gallery-content > div > div > div {
     position: absolute;
     padding-right: 1.2rem;
     padding-top: 0.5rem;
     bottom: 0;
+    width: 100%;
+    height: 9rem;
+    border-radius: 6rem;
     background: rgba(2, 2, 2, 0.65);
+  }
+  .gallery-content > div > div > div > p {
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+  }
+  .gallery-content > div {
+    height: 55vh;
+  }
 }

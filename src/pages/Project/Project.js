@@ -1,10 +1,17 @@
 import React from 'react';
+import Webp from '../../components/elements/Webp';
 import styles from './styles.scoped.css';
 import { IMAGES } from '../../configs';
 import DocumentBackground from './../../utils/DocumentBackground';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Project() {
-  DocumentBackground(`url(${IMAGES.BG_BASE})`);
+  const isMobile = useMediaQuery({ maxWidth: 600 });
+  DocumentBackground(`img-bg-base`);
+
+  if (isMobile) {
+    DocumentBackground(`img-bg-base-mobile`);
+  }
   const pic = [
     {
       img: IMAGES.UMEETME,
@@ -99,16 +106,31 @@ export default function Project() {
   return (
     <div className={styles['project-content']}>
       <div>
+        {isMobile ? (
+          <div>
+            <Webp alt="" classImg={styles['img-mobile']} name="img-project" />
+          </div>
+        ) : null}
         <h2>Project</h2>
-        <p>
-          Para developer yang tergabung dalam Chapter Developer Telkom
-          Indonesia,
-          <br />
-          sesuai dengan keahlian dan kompetensi mereka, mengambil andil dalam{' '}
-          <br />
-          pengembangan produk-produk yang merupakan Digital Initiatives dari
-          Telkom.
-        </p>
+        {isMobile ? (
+          <p>
+            Para developer yang tergabung dalam Chapter Developer Telkom
+            Indonesia, sesuai dengan keahlian dan kompetensi mereka, mengambil
+            andil dalam pengembangan produk-produk yang merupakan Digital
+            Initiatives dari Telkom.
+          </p>
+        ) : (
+          <p>
+            Para developer yang tergabung dalam Chapter Developer Telkom
+            Indonesia,
+            <br />
+            sesuai dengan keahlian dan kompetensi mereka, mengambil andil dalam{' '}
+            <br />
+            pengembangan produk-produk yang merupakan Digital Initiatives dari
+            Telkom.
+          </p>
+        )}
+
         <div>
           {pic.map((data, index) => (
             <div key={index} onClick={() => linkHref(data.link)}>
@@ -117,9 +139,11 @@ export default function Project() {
           ))}
         </div>
       </div>
-      <div>
-        <img alt="" src={IMAGES.ILUSTRATION_PROJECT} />
-      </div>
+      {!isMobile ? (
+        <div>
+          <Webp alt="" className={styles['img-mobile']} name="img-project" />
+        </div>
+      ) : null}
     </div>
   );
 }

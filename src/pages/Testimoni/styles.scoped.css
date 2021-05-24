@@ -1,93 +1,164 @@
 .testimoni-content {
-    width: 100%;
-    margin: 13rem 5rem;
-    margin-right: 2rem;
-    margin-bottom: 0;
-    overflow: hidden;
+  width: 100%;
+  margin: 13rem 5rem;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  overflow: hidden;
 }
 
 .testimoni-content > div {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .testimoni-content > div > div:first-child > p {
-    color: #fff;
-    font-size: 1.2rem;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 .testimoni-content > div > div:first-child {
-    margin-top: 2rem;
-    position: relative;
+  margin-top: 2rem;
+  position: relative;
 }
 
 .testimoni-content > div > div:first-child > div:nth-child(2) {
-    position: absolute;
-    top: 9rem;
-    right: -4rem;
+  position: absolute;
+  top: 9rem;
+  right: -4rem;
 }
 
-.testimoni-content > div > div:first-child > div:nth-child(2) > img {
-    width: 40rem;
+.img-testimoni {
+  width: 40rem;
 }
 
 .testimoni-content > div > article {
-    height: 65vh;
-    overflow: auto;
+  height: 65vh;
+  overflow: auto;
 }
 
 .card-testimoni {
-    width: 45.875rem;
-    height: 15.188rem;
-    background-color: #fff;
-    border-radius: 0.8rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
+  width: 45.875rem;
+  height: 15.188rem;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .card-testimoni > div:first-child {
-    display: flex;
-    padding: 1.2rem;
-    padding-bottom: 0;
+  display: flex;
+  padding: 1.2rem;
+  padding-bottom: 0;
 }
 
 .card-testimoni > div:first-child > img {
-    width: 3rem;
-    height: 3rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    margin-right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
 }
 
 .card-testimoni > div:first-child > div > p:first-child {
-    font-weight: 600;
-    color: #3F4251;
-    font-size: 1rem;
+  font-weight: 600;
+  color: #3f4251;
+  font-size: 1rem;
 }
 
 .card-testimoni > div:first-child > div > p:nth-child(2) {
-    font-weight: 500;
-    color: #979797;
-    font-size: 0.8rem;
+  font-weight: 500;
+  color: #979797;
+  font-size: 0.8rem;
 }
 
 .card-testimoni > div:nth-child(2) > p {
-    padding: 1rem;
-    padding-top: 1.2rem;
-    font-size: 0.9rem;
+  padding: 1rem;
+  padding-top: 1.2rem;
+  font-size: 0.9rem;
 }
 
+.img-mobile {
+  width: 47rem;
+}
 
+.top-mobile {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: unset !important;
+}
 
 @media (max-width: 1600px) {
-    .card-testimoni {
-        width: 45rem;
-        height: 16rem;
-    } 
+  .card-testimoni {
+    width: 45rem;
+    height: 16rem;
+  }
 
-    .card-testimoni > div:nth-child(2) > p {
-        padding: 1rem;
-        padding-top: 1.2rem;
-        font-size: 1rem;
-    }
+  .card-testimoni > div:nth-child(2) > p {
+    padding: 1rem;
+    padding-top: 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimoni-content {
+    width: 100%;
+    margin: 28rem 0rem;
+    margin-right: 2rem;
+    padding-left: 8rem;
+    overflow: auto;
+  }
+
+  .testimoni-content > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimoni-content > div > h2 {
+    font-size: 8rem;
+    align-self: flex-end;
+    margin-bottom: 6rem;
+  }
+  .card-testimoni > div:first-child > img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+  }
+  .testimoni-content > div > div:first-child > p {
+    color: #fff;
+    font-size: 3.7rem;
+    margin-bottom: 7rem;
+  }
+  .card-testimoni {
+    width: 100rem;
+    height: 40rem;
+    border-radius: 4rem;
+    margin-bottom: 4rem;
+  }
+  .card-testimoni > div:first-child > div > p:first-child {
+    font-weight: 600;
+    color: #3f4251;
+    font-size: 3rem;
+  }
+
+  .card-testimoni > div:first-child > div > p:nth-child(2) {
+    font-weight: 500;
+    color: #979797;
+    font-size: 3rem;
+  }
+
+  .card-testimoni > div:nth-child(2) > p {
+    padding: 0 5rem;
+    font-size: 2.5rem;
+  }
+  .testimoni-content > div > article {
+    height: 80vh;
+    overflow: unset;
+  }
+  .card-testimoni > div:first-child {
+    display: flex;
+    padding: 4.2rem;
+    padding-bottom: 0;
+  }
 }

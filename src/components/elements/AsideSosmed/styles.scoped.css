@@ -1,25 +1,54 @@
 .aside-left {
-    display: flex;
-    flex-direction: column;
-    width: 3.125rem;
-    align-items: center;
-    align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 3.125rem;
+  align-items: center;
+  align-self: flex-end;
 }
 
 .aside-left > div:first-child {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7.5rem;
 }
 
 .aside-left > div:first-child > img:nth-child(2n) {
-    width: 1.3rem;
-    cursor: pointer;
-    padding-bottom: 9.25rem;
+  width: 1.3rem;
+  cursor: pointer;
+  padding-bottom: 9.25rem;
 }
 
-.aside-left > div:first-child > img:nth-child(2n+1) {
-    width: 1.3rem;
+.aside-left > div:first-child > img:nth-child(2n + 1) {
+  width: 1.3rem;
+  cursor: pointer;
+  padding-bottom: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .aside-left > div:nth-child(2) {
+    display: none;
+  }
+
+  .aside-left {
+    align-self: center;
+  }
+
+  .aside-left > div:first-child {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aside-left > div:first-child > img:nth-child(2n) {
+    width: 5.5rem;
     cursor: pointer;
     padding-bottom: 1.25rem;
+    margin-left: 5rem;
+  }
+
+  .aside-left > div:first-child > img:nth-child(2n + 1) {
+    width: 5.5rem;
+    cursor: pointer;
+    padding-bottom: 1.25rem;
+    margin-right: 5rem;
+  }
 }

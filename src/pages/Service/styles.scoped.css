@@ -1,54 +1,106 @@
 .service-content {
-    width: 100%;
-    margin-bottom: 0 !important;
-    margin: 13rem 5rem;
+  width: 100%;
+  margin-bottom: 0 !important;
+  margin: 13rem 5rem;
 }
 
 .service-content > h2 {
-    padding-bottom: 2.875rem;
+  padding-bottom: 2.875rem;
 }
 
 .service-content > div {
-    display: flex;
-    flex-wrap: wrap;
-    width: 53.125rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 53.125rem;
 }
 
 .service-content > div > div {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    cursor: pointer;
-    width: 24.875rem;
-    height: 5.813rem;
-    margin-right: 0.938rem;
-    margin-bottom: 0.938rem;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(0.5rem);
-    border-radius: 0.938rem;
-    transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 24.875rem;
+  height: 5.813rem;
+  margin-right: 0.938rem;
+  margin-bottom: 0.938rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 0.938rem;
+  transition: all 0.3s;
 }
 
 .service-content > div > div:hover {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    cursor: pointer;
-    width: 24.875rem;
-    height: 5.813rem;
-    margin-right: 0.938rem;
-    margin-bottom: 0.938rem;
-    background: rgba(255, 232, 27, 0.5);
-    backdrop-filter: blur(0.5rem);
-    border-radius: 0.938rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 24.875rem;
+  height: 5.813rem;
+  margin-right: 0.938rem;
+  margin-bottom: 0.938rem;
+  background: rgba(255, 232, 27, 0.5);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 0.938rem;
 }
 
 .service-content > div > div > p {
-    color: #fff;
-    font-size: 1.25rem;
+  color: #fff;
+  font-size: 1.25rem;
 }
 
 .service-content > div > div > img {
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .service-content {
+    margin: 83rem 0rem;
+    padding-left: 10rem;
+  }
+
+  .service-content > h2 {
+    padding-bottom: 15rem;
+    font-size: 9rem;
+  }
+
+  .service-content > div {
+    width: 100%;
+  }
+
+  .service-content > div > div {
+    width: 48rem;
+    height: 20rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 3rem;
+  }
+
+  .service-content > div > div > img {
     margin-right: 1.25rem;
     margin-left: 1.25rem;
+    width: 12rem;
+  }
+
+  .service-content > div > div > p {
+    font-size: 3.5rem;
+  }
+
+  .service-content > div > div:hover {
+    width: 48rem;
+    height: 20rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 3rem;
+  }
+}
+
+@media (max-height: 750px) {
+  .service-content {
+    margin: 68rem 0rem;
+  }
+
+  .service-content > h2 {
+    padding-bottom: 13rem;
+  }
 }

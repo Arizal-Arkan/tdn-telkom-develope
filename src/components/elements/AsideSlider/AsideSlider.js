@@ -4,8 +4,7 @@ import styles from './styles.scoped.css';
 
 export default function AsideSlider() {
   const history = useHistory();
-  const location = useLocation();
-  const isLocation = location.pathname;
+  const { pathname } = useLocation();
 
   const listMenu = [
     {
@@ -36,14 +35,17 @@ export default function AsideSlider() {
 
   return (
     <aside className={styles['aside-scroll']}>
-      {isLocation === '/' || isLocation === '/home' ? <div> {null} </div> : <div>
-        {listMenu.map((data, index) => (
-          <div key={index}>
-            {data.path === isLocation ? <p>{data.name}</p> : <p>&nbsp;</p> } <div className={data.path === isLocation ? styles['circle-active'] : styles.circle} onClick={() => history.push(data.path)} />
-          </div>
-        ))}
-      </div>}
-      <div className={isLocation === '/' || isLocation === '/home' ? styles['year-intro'] : styles.year}>
+      {pathname !== '/' && (
+        <div>
+          {listMenu.map((data, index) => (
+            <div className={data.path === pathname ? styles.active : ''} key={index}>
+              <div onClick={() => history.push(data.path)} />
+              <p>{data.name}</p>
+            </div>
+          ))}
+        </div>
+      )}
+      <div className={pathname === '/' ? styles['year-intro'] : styles.year}>
         <p>&copy; 2021</p>
       </div>
     </aside>

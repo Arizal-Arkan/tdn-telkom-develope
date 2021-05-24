@@ -5,10 +5,12 @@ import * as THREE from 'three';
 import { Canvas, useFrame, useLoader } from 'react-three-fiber';
 import { Html } from '@react-three/drei';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import DocumentBackground from '../../utils/DocumentBackground';
 import { mouseDegrees, mousePosition } from '../../utils/mouse';
 import styles from './styles.scoped.css';
 
 export default function Home() {
+  DocumentBackground('img-home');
   const mouse = useRef({ x: 0, y: 0 });
   const history = useHistory();
   const dataMenu = [
@@ -51,13 +53,8 @@ export default function Home() {
       <Suspense fallback={null}>
         <Model
           mouse={mouse}
-          position={[0, -1.4, 0]}
+          position={[0, -1.9, 0]}
           scale={[0.45, 0.45, 0.08]}
-        />
-        <Backdrop
-          position={[-0.25, -3.13, -2.75]}
-          rotation={[0, -0.07, 0]}
-          scale={[1.5, 1.5, 0.7]}
         />
       </Suspense>
       <Html className={styles.content} fullscreen scaleFactor={10}>
@@ -85,15 +82,10 @@ export default function Home() {
             <img alt="dev-youtube" src="/assets/ic-black-yt.svg" />
           </a>
         </footer>
+        <p>&copy; 2021</p>
       </Html>
     </Canvas>
   );
-}
-
-function Backdrop({ ...props }) {
-  const { scene } = useLoader(GLTFLoader, '/assets/bg-home.gltf');
-
-  return <primitive object={scene} {...props} />;
 }
 
 function Model({ mouse, ...props }) {
