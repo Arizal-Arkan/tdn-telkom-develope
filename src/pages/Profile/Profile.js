@@ -18,22 +18,18 @@ export default function Profile() {
       </h2>
       {isMobile ? (
         <p>
-          "Bagi Ayubi", Telkom DEV adalah tempat paling hangat dengan penuh ilmu
-          pengetahuan, keceriaan, pengalaman, dan perasaan seperti ada ditengah
-          keluarga. Disini kami saling berbagi dan membantu satu sama lain untuk
-          tumbuh bersama.
+          Mencari talenta terbaik bangsa untuk bergabung bersama memberikan
+          sentuhan baru pada digital Indonesia. Curahkan semangatmu dengan kami
+          CHAPTER DEVELOPER TELKOM INDONESIA, memberi makna bagi bangsa melalui
+          inovasi dan kreasi tanpa batas.
         </p>
       ) : (
         <p>
-          "Bagi Ayubi", Telkom DEV adalah tempat paling hangat dengan <br />
-          penuh ilmu pengetahuan, keceriaan, pengalaman, dan perasaan <br />
-          seperti ada ditengah keluarga. Disini kami saling berbagi dan <br />
-          membantu satu sama lain untuk tumbuh bersama. Keluarga <br />
-          Telkom Dev memberikan dukungan penuh untuk tiap anggotanya
-          <br />
-          menemukan tujuan dan target di kehidupan. Tidak ada lagi kata <br />
-          aku jika ada kamu dan aku di Telkom Dev, maka kita adalah <br />{' '}
-          keluarga.
+          Mencari talenta terbaik bangsa untuk bergabung bersama <br />
+          sentuhan baru pada digital Indonesia. Curahkan <br />
+          semangatmu dengan kami CHAPTER DEVELOPER TELKOM <br />
+          INDONESIA memberi makna bagi bangsa melalui inovasi <br />
+          dan kreasi tanpa batas. <br />
         </p>
       )}
 

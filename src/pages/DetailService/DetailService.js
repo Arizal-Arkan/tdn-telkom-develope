@@ -6,9 +6,15 @@ import { useLocation, useHistory } from 'react-router-dom';
 import DocumentBackground from './../../utils/DocumentBackground';
 import styles from './styles.scoped.css';
 import { IMAGES } from '../../configs';
+import { useMediaQuery } from 'react-responsive';
 
 export default function DetailService() {
+  const isMobile = useMediaQuery({ maxWidth: 600 });
   DocumentBackground('img-bg-detail-service');
+
+  if (isMobile) {
+    DocumentBackground(null);
+  }
 
   const location = useLocation();
   const history = useHistory();

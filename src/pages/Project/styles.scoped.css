@@ -61,7 +61,7 @@
   width: 5.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .project-content > div:first-child {
     display: flex;
     flex-direction: column;

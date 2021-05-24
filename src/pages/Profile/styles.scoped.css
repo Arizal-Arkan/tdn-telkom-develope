@@ -45,7 +45,7 @@
   width: 29rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .profile-content > div > div:nth-child(2) {
     top: 6rem;
   }
@@ -63,6 +63,7 @@
   .profile-content > p {
     margin-top: 5rem;
     margin-bottom: 5rem;
+    width: 98rem;
     font-size: 3.3rem;
   }
 
@@ -83,7 +84,7 @@
   }
 }
 
-@media (max-height: 750px) {
+@media (max-height: 46.875em) {
   .profile-content {
     margin: 70rem 0;
   }

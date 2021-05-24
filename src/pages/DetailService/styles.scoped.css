@@ -1,51 +1,87 @@
 .detail-service {
-    width: 100%;
-    margin-bottom: 0 !important;
-    margin: 12rem 5rem;
+  width: 100%;
+  margin-bottom: 0 !important;
+  margin: 12rem 5rem;
 }
 
 .detail-service > div:nth-last-child(2) {
-    margin-top: 2.6rem;
-    height: 50vh;
-    overflow: auto;
+  margin-top: 2.6rem;
+  height: 50vh;
+  overflow: auto;
 }
 
 .detail-service > div:nth-last-child(1) {
-    margin-top: 2rem;
-    display: flex;
+  margin-top: 2rem;
+  display: flex;
 }
 
 .detail-service > div:nth-last-child(1) > img {
-    margin-right: 8rem;
+  margin-right: 8rem;
 }
 
 .detail-service > div:nth-last-child(1) > div {
-    margin-right: 3rem;
-    text-align: center;
-    cursor: pointer;
+  margin-right: 3rem;
+  text-align: center;
+  cursor: pointer;
 }
 
 .detail-service > div:nth-last-child(1) > div:hover > p {
-    color: #FFE81B;
-    font-size: 1rem;
+  color: #ffe81b;
+  font-size: 1rem;
 }
 
 .detail-service > div:nth-last-child(1) > div > p {
-    color: #fff;
-    font-size: 1rem;
+  color: #fff;
+  font-size: 1rem;
 }
 
 .detail-service > div:nth-last-child(3) {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .detail-service > div > div > p {
-    color: #fff;
-    font-size: 1.2rem;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 .detail-service > div:nth-last-child(2) > div:first-child {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 37.5rem) {
+  .detail-service {
+    margin: 40rem 0;
+    padding-left: 2rem;
+  }
+  .detail-service > div:nth-last-child(2) > div:first-child {
+    margin-bottom: 7rem;
+  }
+  .detail-service > div:nth-last-child(1) {
+    width: 100%;
+    overflow: scroll;
+  }
+  ::-webkit-scrollbar {
+    height: 3rem;
+  }
+  .detail-service > div:nth-last-child(1) > div:hover > p {
+    color: #ffe81b;
+    font-size: 3rem;
+  }
+
+  .detail-service > div:nth-last-child(1) > div > p {
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  .detail-service > div > div > p {
+    color: #fff;
+    font-size: 4rem;
+  }
+
+  .detail-service > h2 {
+    font-size: 8rem;
+    margin-bottom: 10rem;
+  }
 }
 
 /* @media (max-width: 1600px) {

@@ -87,7 +87,7 @@
   justify-content: unset !important;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 100em) {
   .card-testimoni {
     width: 45rem;
     height: 16rem;
@@ -100,7 +100,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .testimoni-content {
     width: 100%;
     margin: 28rem 0rem;

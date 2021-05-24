@@ -149,7 +149,7 @@
   margin-bottom: 4rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .contact-content {
     margin: 20rem 0rem;
     padding-left: 8rem;

@@ -52,7 +52,7 @@
   width: 60rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .partner-content > div:first-child > h2 {
     font-size: 7rem;
     margin-bottom: 10rem;
