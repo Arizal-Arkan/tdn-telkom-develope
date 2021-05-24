@@ -15,6 +15,7 @@ exports[`src/components/elements/Webp render 1`] = `
   />
   <img
     alt=""
+    className=""
     src="/assets/.png"
   />
 </picture>
